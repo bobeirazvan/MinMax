@@ -131,10 +131,6 @@ public class Matrix {
 		  if(copy_board[i][j] == '_') { 
 			 copy_board[i][j] = maximize;
 			 int optSolForThisPos = minimax(copy_board,depth,minimize);
-			 System.out.print(i);
-			 System.out.print(" ");
-			 System.out.println(j);
-			 System.out.println(optSolForThisPos);
 			 if(optSolForThisPos > Best) {
 				Best = optSolForThisPos ;
 				posBest = 3*i + j;
